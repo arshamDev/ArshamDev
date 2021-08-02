@@ -15,21 +15,18 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav collapsible">
-      <a class="nav__link" href="/"
-        ><img src="./images/logojpg.jpg" alt=""
-      /></a>
-      <svg class="icon icon--white nav__toggler">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">item 1</a></li>
-        <li class="nav__item"><a href="#">item 2</a></li>
-        <li class="nav__item"><a href="#">item 3</a></li>
-        <li class="nav__item"><a href="#">item 4</a></li>
-        <li class="nav__item"><a href="#">item 5</a></li>
-      </ul>
-    </nav>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1X2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">
+            This is hero heading of hero component.
+          </h1>
+          <p class="hero__tagline">Lorem ipsum dolor sit amet.</p>
+          <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <img src="./images/heroImage.jpg" alt="this is hero image" />
+      </div>
+    </section>
   </body>
   <script src="./js/main.js"></script>
 </html>

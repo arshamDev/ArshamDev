@@ -29,6 +29,7 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -44,6 +45,24 @@ p {
 }
 a {
   text-decoration: none;
+}
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+.block--dark .block__heading {
+  color: #fff;
+}
+.block--skewed-left {
+  padding-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+.container {
+  max-width: 1142px;
+  margin: 0 auto;
+}
+.block__header {
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
   body {
@@ -471,5 +490,24 @@ a {
   }
   .nav__item {
     border-bottom: 0;
+  }
+}
+/* Hero or Baner */
+.hero {
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
