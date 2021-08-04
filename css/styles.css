@@ -545,9 +545,8 @@ a {
 }
 /* Plan */
 .plan {
-  max-width: 500px;
   color: #fff;
-  margin: 0 auto;
+  transition: transform 0.2s ease-out;
 }
 .plan__name {
   color: #fff;
@@ -591,19 +590,11 @@ a {
   top: 0;
   width: 40px;
 }
-.card {
-  border-radius: 20px;
-  margin: 4rem;
-  box-shadow: 0 0 30px 5px rgb(204, 204, 204);
+.plan:hover {
+  transform: scale(1.05);
 }
-.card--secondary .card__header {
-  background: #61d7f1;
-}
-.card--popular .card__header {
-  background: #3373e9;
-}
-.card__body {
-  padding: 0 4rem;
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 @media screen and (min-width: 768px) {
   .plan__name {
@@ -621,4 +612,32 @@ a {
   .plan {
     margin: 0;
   }
+}
+/* Card */
+.card {
+  border-radius: 20px;
+  box-shadow: 0 0 30px 5px rgb(204, 204, 204);
+}
+.card--secondary .card__header {
+  background: #77eaff;
+}
+.card--primary .card__header {
+  background: #3373e9;
+}
+.card--primary .badge--primary {
+  background: #126de4;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+.card__body {
+  padding: 0 4rem;
+}
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
