@@ -5,6 +5,14 @@
       <p class="hero__tagline">Lorem ipsum dolor sit amet.</p>
       <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
     </header>
-    <img src="./images/heroImage.jpg" alt="this is hero image" />
+    <picture>
+      <source
+        type="image/webp"
+        srcset="./images/heroImage@1x.webp 1x, ./images/heroImage@2x.webp 2x" />
+      <source
+        type="image/png"
+        srcset="./images/heroImage@1x.png 1x, ./images/heroImage@2x.png 2x" />
+      <img src="./images/heroImage.jpg" alt="this is hero image"
+    /></picture>
   </div>
 </section>

@@ -46,6 +46,9 @@ p {
 a {
   text-decoration: none;
 }
+.block {
+  display: block;
+}
 .block--dark {
   background: #000;
   color: #7b858b;
@@ -189,6 +192,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: 0;
   padding: 2rem 3rem;
   text-align: center;
   text-decoration: none;
@@ -196,7 +200,12 @@ a {
   transition: all 0.15s ease;
   white-space: nowrap;
 }
-
+.btn .icon {
+  height: 3rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  width: 3rem;
+}
 .btn--primary {
   background: var(--color-primary);
   color: #fff;
@@ -260,7 +269,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -509,5 +518,28 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+/* Domain */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
