@@ -48,6 +48,7 @@ a {
 }
 .block {
   display: block;
+  padding: 0 4rem;
 }
 .block--dark {
   background: #000;
@@ -640,4 +641,24 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+/* Feature */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+.feature__heading {
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+.feature__image {
+  width: 100%;
+}
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
