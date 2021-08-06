@@ -69,6 +69,7 @@ a {
   text-align: center;
   margin-bottom: 4rem;
 }
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -134,7 +135,6 @@ a {
 }
 /* List */
 .list {
-  color: var(--color-heading);
   list-style: none;
   padding-left: 0;
 }
@@ -195,7 +195,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -272,6 +272,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 .input-group .btn {
   margin: 4px;
@@ -488,6 +489,10 @@ a {
 .nav__link {
   transform: translateY(5px);
 }
+.nav__link img {
+  width: 100%;
+  max-width: 150px;
+}
 @media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
@@ -507,12 +512,19 @@ a {
 .hero {
   clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 }
+.hero img {
+  width: 100%;
+}
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
   margin: 2rem 0 5rem 0;
 }
+.hero .block__heading {
+  font-size: 5rem;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
@@ -520,6 +532,9 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+  .hero .block__heading {
+    font-size: 4rem;
   }
 }
 /* Domain */
@@ -530,8 +545,9 @@ a {
   max-width: 670px;
 }
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   align-items: center;
@@ -539,6 +555,11 @@ a {
   font-weight: 600;
   max-width: 700px;
   margin: 0 auto;
+}
+@media screen and (min-width: 425px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 768px) {
   .block-domain__prices {
