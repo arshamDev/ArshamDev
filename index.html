@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body>
@@ -32,14 +33,14 @@
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1X2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-right">
           <h1 class="block__heading">
             This is hero heading of hero component.
           </h1>
           <p class="hero__tagline">Lorem ipsum dolor sit amet.</p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="
@@ -56,7 +57,7 @@
         /></picture>
       </div>
     </section>
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="fade-up">
       <header class="block__header">
         <h2>Domain heading</h2>
         <p>
@@ -88,6 +89,269 @@
         <li>.xyz $10</li>
       </ul>
     </section>
+    <section class="block container block-plans" data-aos="fade-up">
+      <div class="grid grid--1X3">
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14 </span>
+              <span class="plan__billing_cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">East start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick plan__list">
+                <li class="list__item">Unlimited Website</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100GB SSD storge</li>
+                <li class="list__item">3GB RAM</li>
+              </ul>
+              <butoon class="btn btn--outline btn--block">Start</butoon>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14 </span>
+              <span class="plan__billing_cycle">/month</span>
+              <span class="badge badge--primary badge--small">10% OFF</span>
+              <span class="plan__description">East start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick plan__list">
+                <li class="list__item">Unlimited Website</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100GB SSD storge</li>
+                <li class="list__item">3GB RAM</li>
+              </ul>
+              <butoon class="btn btn--outline btn--block">Start</butoon>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14 </span>
+              <span class="plan__billing_cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">East start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick plan__list">
+                <li class="list__item">Unlimited Website</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100GB SSD storge</li>
+                <li class="list__item">3GB RAM</li>
+              </ul>
+              <butoon class="btn btn--outline btn--block">Start</butoon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header" data-aos="fade-up">
+        <h2>Host On The Cloud To Keep Growing</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa,
+          ducimus!
+        </p>
+      </header>
+      <article class="grid grid--1X2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Easy to use</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            velit quam ea, maxime eligendi magnam dignissimos nam aut aperiam
+            nisi ullam ducimus ad distinctio itaque illo beatae impedit odit
+            reprehenderit?
+          </p>
+          <a href="#" class="link-arrow">Learn more</a>
+        </div>
+        <picture data-aos="zoom-out-left">
+          <source
+            type="image/webp"
+            srcset="
+              ./images/heroImage@1x.webp 1x,
+              ./images/heroImage@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="./images/heroImage@1x.png 1x, ./images/heroImage@2x.png 2x"
+          />
+          <img
+            class="feature__image"
+            src="./images/heroImage.jpg"
+            alt="this is features image"
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1X2 feature">
+        <div class="feature__content" data-aos="fade-up">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Easy to use</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            velit quam ea, maxime eligendi magnam dignissimos nam aut aperiam
+            nisi ullam ducimus ad distinctio itaque illo beatae impedit odit
+            reprehenderit?
+          </p>
+          <a href="#" class="link-arrow">Learn more</a>
+        </div>
+        <picture data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcset="
+              ./images/heroImage@1x.webp 1x,
+              ./images/heroImage@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="./images/heroImage@1x.png 1x, ./images/heroImage@2x.png 2x"
+          />
+          <img
+            class="feature__image"
+            src="./images/heroImage.jpg"
+            alt="this is features image"
+          />
+        </picture>
+      </article>
+    </section>
+    <section class="card testimonial" data-aos="zoom-in-up">
+      <div class="grid grid--1X2">
+        <div class="testimonial__image">
+          <img src="./images/man.jfif" alt="he is a happy man" />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+        </div>
+
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Dignissimos expedita delectus a velit odio similique aut est neque
+            ratione dolor.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__tittle quote__author">Arsham Dev</h3>
+                <p class="author__company">arsham company</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+    <section class="container block__callout">
+      <div class="callout callout--primary">
+        <div class="grid grid--1X2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Start</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              saepe nam perspiciatis unde, ut ipsa natus necessitatibus beatae
+              deleniti commodi.
+            </p>
+          </div>
+          <a href="" class="btn btn--secondary btn--stretched"> GET STARTED</a>
+        </div>
+      </div>
+    </section>
+    <footer class="block block--dark footer">
+      <div class="container grid grid--1X3 footer__grid">
+        <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Item1</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <ul class="collapsible__content footer__content list">
+            <li><a href="#">content 1</a></li>
+            <li><a href="#">content 2</a></li>
+            <li><a href="#">content 3</a></li>
+            <li><a href="#">content 4</a></li>
+            <li><a href="#">content 5</a></li>
+          </ul>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Item2</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <ul class="collapsible__content list">
+            <li><a href="#">content 1</a></li>
+            <li><a href="#">content 2</a></li>
+            <li><a href="#">content 3</a></li>
+            <li><a href="#">content 4</a></li>
+            <li><a href="#">content 5</a></li>
+          </ul>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Item3</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <ul class="collapsible__content list">
+            <li><a href="#">content 1</a></li>
+            <li><a href="#">content 2</a></li>
+            <li><a href="#">content 3</a></li>
+            <li><a href="#">content 4</a></li>
+            <li><a href="#">content 5</a></li>
+          </ul>
+        </section>
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Item4</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <ul class="collapsible__content list">
+            <li><a href="#">content 1</a></li>
+            <li><a href="#">content 2</a></li>
+            <li><a href="#">content 3</a></li>
+            <li><a href="#">content 4</a></li>
+            <li><a href="#">content 5</a></li>
+          </ul>
+        </section>
+        <section class="footer__brand">
+          <img class="footer__logo" src="./images/logo.png" alt="#" />
+          <p class="footer__copyright">Copyright &copy; 2021 Arsham Dev</p>
+        </section>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script src="./js/main.js"></script>
 </html>

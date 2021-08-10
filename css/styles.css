@@ -364,7 +364,12 @@ a {
 .testimonial__image > .icon-container {
   position: absolute;
   top: 3rem;
-  right: -30px;
+  right: -20px;
+}
+@media screen and (min-width: 425px) {
+  .testimonial__image > .icon-container {
+    right: -30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .testimonial .quote,
@@ -388,7 +393,7 @@ a {
 }
 /* Callout */
 .callout {
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 5px;
 }
 .callout--primary {
@@ -407,6 +412,15 @@ a {
 .callout__content {
   text-align: center;
 }
+.block__callout {
+  margin: 4rem 2rem;
+}
+
+@media screen and (min-width: 425px) {
+  .callout {
+    padding: 4rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .callout__content {
     text-align: left;
@@ -417,6 +431,9 @@ a {
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
+  }
+  .block__callout {
+    margin: 4rem auto;
   }
 }
 /* Collapsible */
@@ -578,7 +595,7 @@ a {
   margin: 0;
 }
 .plan__price {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .plan__billing_cycle {
   font-size: 2.4rem;
@@ -591,6 +608,10 @@ a {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
+}
+.plan__list {
+  color: var(--color-heading);
+  font-size: 2rem;
 }
 .plan .list__item {
   margin-bottom: 2rem;
@@ -634,6 +655,9 @@ a {
   }
   .plan {
     margin: 0;
+  }
+  .plan__list {
+    font-size: 2.4rem;
   }
 }
 /* Card */
